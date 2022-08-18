@@ -1,1 +1,1 @@
-# Eklavya_MazeBlaze-v2_Demo
+# Eklavya_MazeBlaze-v2
