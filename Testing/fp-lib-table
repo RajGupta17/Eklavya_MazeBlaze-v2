@@ -1,6 +1,0 @@
-(fp_lib_table
-  (lib (name "1N581_")(type "KiCad")(uri "${KIPRJMOD}/1N581_")(options "")(descr ""))
-  (lib (name "1N5399")(type "KiCad")(uri "${KIPRJMOD}/1N5399")(options "")(descr ""))
-  (lib (name "SS34")(type "KiCad")(uri "${KIPRJMOD}/SS34")(options "")(descr ""))
-  (lib (name "led_array")(type "KiCad")(uri "${KIPRJMOD}/led_array")(options "")(descr ""))
-)
