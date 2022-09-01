@@ -57,8 +57,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -129,7 +128,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "4e7a5997418cd429",
+  "active": "fbba4ec23df971f4",
   "lastOpenFiles": [
     "KiCAD Materials/KiCAD_Notes.md"
   ]
