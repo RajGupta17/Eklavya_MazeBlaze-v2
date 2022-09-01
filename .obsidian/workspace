@@ -1,0 +1,136 @@
+{
+  "main": {
+    "id": "7174f0233869000e",
+    "type": "split",
+    "children": [
+      {
+        "id": "c43ef9e0fd19dd9d",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "KiCAD Materials/KiCAD_Notes.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "215d39656252ebf5",
+    "type": "split",
+    "children": [
+      {
+        "id": "6af6980bb4d953ba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fbba4ec23df971f4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "8446032b22b0f0da",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e8f27c6a74a904ae",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f6c28aa4992f9987",
+    "type": "split",
+    "children": [
+      {
+        "id": "50d58504e5f85e29",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4e7a5997418cd429",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "KiCAD Materials/KiCAD_Notes.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9d62910bd11d0477",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "KiCAD Materials/KiCAD_Notes.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "eef5160eb5663d75",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "b42c8b74f4029982",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "KiCAD Materials/KiCAD_Notes.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "4e7a5997418cd429",
+  "lastOpenFiles": [
+    "KiCAD Materials/KiCAD_Notes.md"
+  ]
+}
