@@ -1,1 +1,2 @@
-# Analog to Digital Converter 
+# Analog to Digital Converter (ADC)
+
