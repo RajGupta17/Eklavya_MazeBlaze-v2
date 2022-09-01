@@ -7,7 +7,7 @@ AN OPTICAL ENCODER IS A TYPE OF MOTION SENSING DEVICE that uses light shone thr
 ![image](https://www.encoder.com/hs-fs/hubfs/articles/what-is-an-encoder/rotary-encoder-exploded-rendering_1080x608.jpg?width=2160&name=rotary-encoder-exploded-rendering_1080x608.jpg)
 
 
-## Broken down in steps, this is how an optical encoder provides motion feedback information:
+## Steps on how an optical encoder provides motion feedback information:
 
 1.  A beam of light emitted from an LED passes through a Code Disk, a transparent disk patterned with opaque lines (much like the spokes on a bike wheel).
 2.  The light beam is picked up by a Photodetector Assembly, also called a photodiode array or a photosensor.
