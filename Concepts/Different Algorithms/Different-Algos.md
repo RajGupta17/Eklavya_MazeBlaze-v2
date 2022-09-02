@@ -11,3 +11,6 @@ It maps the maze and assign the values of cells from where shortest path is foun
 
 ### 4) Flood-Fill Algorithm:
 In this algorithm also,the cell numbers are added in order to get the shortest path.
+
+## Flood-fill Algorith in Depth
+

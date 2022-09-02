@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Concepts/Terminologies/Oprical Encoders/Optical-Encoders.md",
+            "file": "Concepts/Different Algorithms/Different-Algos.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Concepts/Terminologies/Oprical Encoders/Optical-Encoders.md",
+                "file": "Concepts/Different Algorithms/Different-Algos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Concepts/Terminologies/Oprical Encoders/Optical-Encoders.md",
+                "file": "Concepts/Different Algorithms/Different-Algos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Concepts/Terminologies/Oprical Encoders/Optical-Encoders.md"
+                "file": "Concepts/Different Algorithms/Different-Algos.md"
               }
             }
           }
@@ -130,8 +130,8 @@
   },
   "active": "c43ef9e0fd19dd9d",
   "lastOpenFiles": [
-    "Concepts/Terminologies/ADC/ADC.md",
     "Concepts/Terminologies/Oprical Encoders/Optical-Encoders.md",
+    "Concepts/Terminologies/ADC/ADC.md",
     "Concepts/Different Algorithms/Different-Algos.md",
     "KiCAD Materials/KiCAD_Notes.md"
   ]
