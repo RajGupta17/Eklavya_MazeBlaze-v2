@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name "ESP32S3WROOM1N8R8")(type "Legacy")(uri "/home/raj/Downloads/ESP32S3WROOM1N8R8.lib")(options "")(descr ""))
+  (lib (name "IRFZ44N")(type "Legacy")(uri "/home/raj/Desktop/CoppeliaSim_Edu_V4_3_0_rev12_Ubuntu20_04/IRFZ44N.lib")(options "")(descr ""))
+  (lib (name "ESP32-S3-DEVKITC-1-N8R2")(type "Legacy")(uri "/home/raj/Desktop/MAZEBLAZE-v2/ESP32-S3-DEVKITC-1-N8R2.lib")(options "")(descr ""))
+)
