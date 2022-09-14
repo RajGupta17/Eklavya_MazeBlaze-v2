@@ -8,3 +8,6 @@ We store the outcome respectively and then backtrack to the most recent checkpoi
 1) reaching dead end :  we delete the path from the last checkpoint to that node from memory . In other words , we eraze that dead end node as a vertex in graph 
 2) Reaching the same node : We backtrack to most recent checkpoint ( as stored in stack )
 3) Reaching the end :  We backtrack to most recent checkpoint ( as stored in stack )
+We continue this until all the nodes are explored completely .
+
+We store the names of nodes as A , B …. etc . For each node , we store all of its neighbors in the form of an adjacency list along with their individual distances . This generates a weighted graph which we feed to djikstra’s .
