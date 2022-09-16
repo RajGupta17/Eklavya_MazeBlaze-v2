@@ -1,55 +1,44 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include <stdlib.h>
 
 struct node // defining a struct for all nodes
 {
     int coordinates[1][1];
-    int possible_arr[8]; // 8 types of directions
+    int possible_arr[8]; // 8 types of directions [W , NW , N , NE , E , SE , S , SW]
     int explored_arr[8];
-    int dir;
-    char neighbours[8] ;
-    int nodal_distance[8] ;
 };
 
-// function prototyping
-void NodalAnalysis(bool result, int no_of_nodes, struct node *node[100], int obtained_coordinates[1][1], int lsa_sensors[9], bool IsEndComplete , int dir );
-bool IsNewNode(int obtained_coordinates[1][1], struct node node[100], int no_of_nodes);
-void TypeDetector(int lsa_sensors[8], int no_of_nodes, int possible_arr[8] , int explored_arr[8] , int dir) ;
+#define MAX_STACK 50    //variables for stack
+int top = -1 ;
+struct node node[100];
+int checkpoint_stack[MAX_STACK];
+int no_of_nodes ;
+int dir ; ///////////////////////////////////////////////////////////////////////////////// (pending) we need to create a function which takes the current dir and then updates the possible arr and explored arr for the node 
 
-//main starts here
+void push(int node);    //function prototyping 
+int pop() ;
+bool is_new_node(int obtained_coordinates[1][1] ) ;
+
+//--------------------------------------------------------------------------------//
+
+//main() starts from here 
 int main()
 {
-    int no_of_nodes, obtained_coordinates[1][1], lsa_sensors[9];
-    bool IsEndComplete;
-    struct node node[100];
+    
+    int * adj_list [50] ;
+    int * adj_dist_list [50] ;
+    int obtained_coordinates[1][1] ;
 
-    //----------------------This is hardcoded for the start node--------------------------
-    node[0].possible_arr = node[0].explored_arr = {0} ; 
-    node[0].dir = 3 ; // North 
-    node[0].TypeDetector() ;
+    adj_list[no_of_nodes] = (int *) malloc ( sizeof(int[4])) ;      //To store all the nearest neighbour
+    adj_dist_list[no_of_nodes] = (int *) malloc ( sizeof(int[4])) ;         //To store the respective distances
 
 }
-//end of main 
+//main() ends here
 
+//--------------------------------------------------------------------------------//
 
-void NodalAnalysis(bool result, int no_of_nodes, struct node *node[100], int obtained_coordinates[1][1], int lsa_sensors[9], bool IsEndComplete , int dir)
-{
-    if (result == 1)
-    {
-        node[no_of_nodes]->coordinates == obtained_coordinates;
-        TypeDetector(lsa_sensors, no_of_nodes, node[no_of_nodes]->possible_arr , node[no_of_nodes]->explored_arr , dir  );
-        no_of_nodes++;
-    }
-    else
-    {
-        if (IsEndComplete == 1)
-        {
-        }
-    }
-}
-//end of function
-
-bool IsNewNode(int obtained_coordinates[1][1], struct node node[100], int no_of_nodes)
+bool is_new_node(int obtained_coordinates[1][1])
 {
     for (int i = 0; i < no_of_nodes; i++)
     {
@@ -63,11 +52,32 @@ bool IsNewNode(int obtained_coordinates[1][1], struct node node[100], int no_of_
         }
     }
 }
-//end of function
+//is_new_node of function
 
-void TypeDetector(int lsa_sensors[8], int no_of_nodes, int possible_arr[8] , int explored_arr[8] , int dir )
+void push(int node)
 {
-//This function will detect the type of node and on basis of  present direction , it will fill the array 
+    if (top > MAX_STACK)
+    {
+        printf("Stack overflow") ;
+    }
+    else
+    {
+        checkpoint_stack[++top] = node;
+    }
 }
-//end of function
+//push() ends here
 
+int pop()
+{
+    if(top == -1 )
+    {
+        printf("Maze has ended") ;
+        exit(0);
+        /////////////////////////////////////////////////////////////////////////////////////////Maze has ended --> Add code to go END ( pending )
+    }
+    else
+    {
+        return checkpoint_stack[top--] ;
+    }
+}
+//pop() ends here
