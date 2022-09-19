@@ -8,4 +8,8 @@
 #include "driver/adc.h"
 #include "esp_adc_cal.h"
 
+
+esp_err_t enable_lsa() ;
+int get_readings_lsa() ;
+
 #endif 
