@@ -47,6 +47,11 @@ int get_raw_lsa() // gets raw readings in range of 400 - 2000 appx
         }
     }
 
-    return lsa_readings ; //returns array of LSA readings 
-}
-
+    while (1)
+    {
+        for (int i = 0; i < no_of_sensors; i++)
+        {
+            printf("%d ", lsa_readings[i]);
+        }
+        printf('/n') ;
+    }
