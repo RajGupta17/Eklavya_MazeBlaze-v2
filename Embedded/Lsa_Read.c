@@ -3,10 +3,10 @@
 
 void app_main(void)
 {
-    ESP_ERROR_CHECK() ;
+    ESP_ERROR_CHECK(enable_lsa()) ;
 
     while (1)
     {
-        
+        get_raw_lsa() ;
     }
 }
