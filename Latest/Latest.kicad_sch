@@ -4119,7 +4119,7 @@
     (uuid 3c872b4d-d368-41c8-bff3-2a878c57d279)
     (property "Reference" "R16" (id 0) (at 187.452 146.558 90))
     (property "Value" "R" (id 1) (at 187.198 148.844 90))
-    (property "Footprint" "" (id 2) (at 186.944 152.654 90)
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric" (id 2) (at 186.944 152.654 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 186.944 150.876 0)
@@ -5274,7 +5274,7 @@
     (property "Value" "R" (id 1) (at 193.04 158.75 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (id 2) (at 193.294 156.972 90)
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric" (id 2) (at 193.294 156.972 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 191.516 156.972 0)
@@ -5450,10 +5450,10 @@
       (reference "R15") (unit 1) (value "R") (footprint "Resistor_SMD:R_1206_3216Metric")
     )
     (path "/3c872b4d-d368-41c8-bff3-2a878c57d279"
-      (reference "R16") (unit 1) (value "R") (footprint "")
+      (reference "R16") (unit 1) (value "R") (footprint "Resistor_SMD:R_1206_3216Metric")
     )
     (path "/f4df0f64-be65-4a37-96a0-81f0750933fc"
-      (reference "R17") (unit 1) (value "R") (footprint "")
+      (reference "R17") (unit 1) (value "R") (footprint "Resistor_SMD:R_1206_3216Metric")
     )
     (path "/160cf280-bdf9-4f60-9ac9-cb06547dab57"
       (reference "R18") (unit 1) (value "R") (footprint "Resistor_SMD:R_1206_3216Metric")
