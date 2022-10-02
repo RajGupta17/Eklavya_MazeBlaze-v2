@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name "IRFZ44N")(type "KiCad")(uri "/home/raj/Desktop/IRFZ44N")(options "")(descr ""))
+  (lib (name "QRE1113 IR LED")(type "KiCad")(uri "/home/raj/Downloads/QRE1113 IR LED")(options "")(descr ""))
+  (lib (name "ESP32-WROOM")(type "KiCad")(uri "/home/raj/Downloads/ESP32-WROOM")(options "")(descr ""))
+)
