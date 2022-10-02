@@ -1,41 +1,15 @@
-/*
- * Copyright (c) 2019 David Antliff
- *
- * This program provides an example using the esp32-rotary-encoder component.
- * Events are received via an event queue and displayed on the serial console.
- * The task also polls the device position every second to show that the latest
- * event always matches the current position.
- *
- * esp32-rotary-encoder is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * esp32-rotary-encoder is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with esp32-rotary-encoder.  If not, see <https://www.gnu.org/licenses/>.
- */
-
 #include <stdbool.h>
-
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "freertos/queue.h"
 #include "esp_system.h"
 #include "esp_log.h"
-
 #include "rotary_encoder.h"
 
 #define TAG "app"
 
-
-#define ROT_ENC_C_GPIO 17
-#define ROT_ENC_D_GPIO 5
-
+#define ROT_ENC_A_GPIO 17
+#define ROT_ENC_B_GPIO 5
 
 #define ENABLE_HALF_STEPS false  // Set to true to enable tracking of rotary encoder at half step resolution
 #define RESET_AT          0      // Set to a positive non-zero number to reset the position if this value is exceeded
@@ -48,7 +22,7 @@ void app_main()
 
     // Initialise the rotary encoder device with the GPIOs for A and B signals
     rotary_encoder_info_t info = { 0 };
-    ESP_ERROR_CHECK(rotary_encoder_init(&info, ROT_ENC_C_GPIO, ROT_ENC_D_GPIO));
+    ESP_ERROR_CHECK(rotary_encoder_init(&info, ROT_ENC_A_GPIO, ROT_ENC_B_GPIO));
     ESP_ERROR_CHECK(rotary_encoder_enable_half_steps(&info, ENABLE_HALF_STEPS));
 #ifdef FLIP_DIRECTION
     ESP_ERROR_CHECK(rotary_encoder_flip_direction(&info));
@@ -65,7 +39,7 @@ void app_main()
         rotary_encoder_event_t event = { 0 };
         if (xQueueReceive(event_queue, &event, 1000 / portTICK_PERIOD_MS) == pdTRUE)
         {
-            ESP_LOGI(TAG, "Event: position %d, direction %s", event.state.position,
+            ESP_LOGI(TAG, "Event: Distance: %lf, direction %s", (event.state.position)*0.055,
                      event.state.direction ? (event.state.direction == ROTARY_ENCODER_DIRECTION_CLOCKWISE ? "CW" : "CCW") : "NOT_SET");
         }
         else
@@ -73,7 +47,7 @@ void app_main()
             // Poll current position and direction
             rotary_encoder_state_t state = { 0 };
             ESP_ERROR_CHECK(rotary_encoder_get_state(&info, &state));
-            ESP_LOGI(TAG, "Poll: position %d, direction %s", state.position,
+            ESP_LOGI(TAG, "Distance %lf, direction %s", (state.position)*0.055,
                      state.direction ? (state.direction == ROTARY_ENCODER_DIRECTION_CLOCKWISE ? "CW" : "CCW") : "NOT_SET");
 
             // Reset the device

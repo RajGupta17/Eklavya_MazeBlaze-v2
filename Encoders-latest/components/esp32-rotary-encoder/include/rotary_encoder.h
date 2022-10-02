@@ -1,38 +1,6 @@
-/*
- * Copyright (c) 2019 David Antliff
- * Copyright 2011 Ben Buxton
- *
- * This file is part of the esp32-rotary-encoder component.
- *
- * esp32-rotary-encoder is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * esp32-rotary-encoder is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with esp32-rotary-encoder.  If not, see <https://www.gnu.org/licenses/>.
- */
-
 /**
  * @file rotary_encoder.h
  * @brief Interface definitions for the ESP32-compatible Incremental Rotary Encoder component.
- *
- * This component provides a means to interface with a typical rotary encoder such as the EC11 or LPD3806.
- * These encoders produce a quadrature signal on two outputs, which can be used to track the position and
- * direction as movement occurs.
- *
- * This component provides functions to initialise the GPIOs and install appropriate interrupt handlers to
- * track a single device's position. An event queue is used to provide a way for a user task to obtain
- * position information from the component as it is generated.
- *
- * Note that the queue is of length 1, and old values will be overwritten. Using a longer queue is
- * possible with some minor modifications however newer values are lost if the queue overruns. A circular
- * buffer where old values are lost would be better (maybe StreamBuffer in FreeRTOS 10.0.0?).
  */
 
 #ifndef ROTARY_ENCODER_H
@@ -73,7 +41,7 @@ typedef uint8_t table_row_t[TABLE_COLS];
  */
 typedef struct
 {
-    rotary_encoder_position_t position;    ///< Numerical position since reset. This value increments on clockwise rotation, and decrements on counter-clockewise rotation. Counts full or half steps depending on mode. Set to zero on reset.
+    rotary_encoder_position_t position;    ///< Numerical position since reset. 
     rotary_encoder_direction_t direction;  ///< Direction of last movement. Set to NOT_SET on reset.
 } rotary_encoder_state_t;
 
