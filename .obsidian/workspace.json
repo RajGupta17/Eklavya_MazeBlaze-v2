@@ -1,0 +1,164 @@
+{
+  "main": {
+    "id": "7174f0233869000e",
+    "type": "split",
+    "children": [
+      {
+        "id": "5999b9e3864dd9db",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "89925494833b9d04",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "6074b005a0114fa4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Concepts/Terminologies/Attenuation/Attenuation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "215d39656252ebf5",
+    "type": "split",
+    "children": [
+      {
+        "id": "6af6980bb4d953ba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fbba4ec23df971f4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8446032b22b0f0da",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e8f27c6a74a904ae",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f6c28aa4992f9987",
+    "type": "split",
+    "children": [
+      {
+        "id": "50d58504e5f85e29",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4e7a5997418cd429",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Concepts/Terminologies/Attenuation/Attenuation.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9d62910bd11d0477",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Concepts/Terminologies/Attenuation/Attenuation.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "eef5160eb5663d75",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "b42c8b74f4029982",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Concepts/Terminologies/Attenuation/Attenuation.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "fbba4ec23df971f4",
+  "lastOpenFiles": [
+    "Concepts/Different Algorithms/Different-Algos.md",
+    "Concepts/Terminologies/Mosfets/Mosfets.md",
+    "Concepts/Terminologies/Optical Encoders/Optical-Encoders.md",
+    "KiCAD Materials/Routing.png",
+    "KiCAD Materials/Schematic Diagram.png",
+    "KiCAD Materials/Steps for making a PCB.png",
+    "KiCAD Materials/LED Footprint.png",
+    "KiCAD Materials/KiCAD_Notes.md",
+    "Untitled 2.md",
+    "Untitled 1.md"
+  ]
+}
