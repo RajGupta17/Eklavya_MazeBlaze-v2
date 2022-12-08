@@ -975,7 +975,7 @@
       (effects (font (size 1.001528 1.001528) (thickness 0.15)))
       (tstamp 8c1a470e-5b58-4f27-91a5-963754f67f85)
     )
-    (fp_text value "TCRT5000" (at 12.55873 4.21761) (layer "F.Fab")
+    (fp_text value "TCRT5000" (at 12.55873 4.21761) (layer "F.Fab") hide
       (effects (font (size 1.00252 1.00252) (thickness 0.15)))
       (tstamp 4d93694b-140b-4368-b438-a4dbae9e4936)
     )
@@ -1264,7 +1264,7 @@
       (effects (font (size 1.001528 1.001528) (thickness 0.15)))
       (tstamp 23bd7165-13e9-498e-b5ef-f54a63de4560)
     )
-    (fp_text value "TCRT5000" (at 12.55873 4.21761) (layer "F.Fab")
+    (fp_text value "TCRT5000" (at 12.55873 4.21761) (layer "F.Fab") hide
       (effects (font (size 1.00252 1.00252) (thickness 0.15)))
       (tstamp 1840a468-3fe4-4cbd-9180-c79ee26b8c80)
     )
